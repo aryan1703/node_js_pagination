@@ -1,9 +1,9 @@
-const mongoose = 'mongoose'
-
+const mongoose = require('mongoose')
+mongoose.set("strictQuery", false);
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required
+        required: true
     }
 })
 
